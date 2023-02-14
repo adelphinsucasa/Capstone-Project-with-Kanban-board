@@ -25,13 +25,15 @@ const renderData = async () => {
                             <button class="btnComment">comments</button>
                             <button class="btnReservation">reservation</button>
                         </li>`;
-    var  imgLike = document.querySelectorAll(`.imageLike`);
+    var imgLike = document.querySelectorAll(`.imageLike`);
 
-    imgLike.forEach(item).addEventListener('click', (e) => {
+    imgLike.forEach((item) => {
+      item.addEventListener('click', (e) => {
         console.log(e.target);
         /*this.src = "./assets/images/icons-sparkling-heart-48.png"
-        const item = {"item_id": element.id}
-        setLike(item);*/
+            const item = {"item_id": element.id}
+            setLike(item);*/
+      });
     });
   });
 };
