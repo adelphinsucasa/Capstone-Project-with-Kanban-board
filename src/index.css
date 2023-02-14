@@ -22,6 +22,30 @@ header nav {
   margin-left: 200px;
 }
 
-main {
+main .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
   height: 78vh;
+  gap: 10px;
+}
+
+main .card {
+  display: flex;
+  flex-direction: column;
+}
+
+main .card img {
+  width: 200px;
+  height: 200px;
+}
+
+main .card .cardData {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+main .card .cardData img {
+  width: 24px;
+  height: auto;
 }
