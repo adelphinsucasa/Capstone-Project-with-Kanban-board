@@ -25,7 +25,6 @@ header nav {
 main .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  height: 78vh;
   gap: 10px;
 }
 
@@ -48,4 +47,26 @@ main .card .cardData {
 main .card .cardData img {
   width: 24px;
   height: auto;
+}
+
+.cardName {
+  font-size: 20px;
+}
+
+.nameTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnComment {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btnReservation {
+  border-radius: 5px;
+}
+
+.textFooter {
+  margin-top: 20px;
 }
