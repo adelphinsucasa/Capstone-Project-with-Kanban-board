@@ -2,5 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: darkolivegreen;
+}
+
+header {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+
+header .logo img {
+  width: 120px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin-left: 200px;
+}
+
+main {
+  height: 78vh;
 }
