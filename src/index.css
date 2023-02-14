@@ -22,6 +22,12 @@ header nav {
   margin-left: 200px;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+}
+
 main .cardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +62,17 @@ main .card .cardData img {
 .nameTitle {
   display: flex;
   flex-direction: column;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.imageLike {
+  cursor: pointer;
 }
 
 .btnComment {
