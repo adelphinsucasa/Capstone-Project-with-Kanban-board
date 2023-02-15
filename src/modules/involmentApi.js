@@ -1,20 +1,23 @@
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tXDs92p4CgyF2G2M8iej/likes';
-//Id: tXDs92p4CgyF2G2M8iej
-///apps/:app_id/likes/
+import renderData from './displayData.js';
 
-const getLike = async (item) => {
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3lD0DwLbuZ6dRNZiA1CE/likes';
+
+const getLike = async () => {
   const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  return response.json();
 };
 
 const setLike = async (data = {}) => {
-    const response = await fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(data),
-      });
-    
-      return response.json();
+  await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(() => {
+      renderData(Math.trunc(data.item_id.slice(3) / 13) + 1);
+    });
 };
 
-export { setLike };
+export { setLike, getLike };

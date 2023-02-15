@@ -1,8 +1,24 @@
-import { fetchCharacter } from "./modules/apiManagement.js";
-import renderData from "./modules/displayData.js";
+import renderData from './modules/displayData.js';
 
-const main = document.querySelector('.main');
-const ul = document.querySelector('.cardContainer');
+const westeros = document.querySelector('#westeros');
+const essos = document.querySelector('#essos');
+const sothoryos = document.querySelector('#sothoryos');
+const ulthos = document.querySelector('#ulthos');
 
-renderData();
-fetchCharacter();
+westeros.addEventListener('click', () => {
+  renderData(1);
+});
+
+essos.addEventListener('click', () => {
+  renderData(2);
+});
+
+sothoryos.addEventListener('click', () => {
+  renderData(3);
+});
+
+ulthos.addEventListener('click', () => {
+  renderData(4);
+});
+
+westeros.click();

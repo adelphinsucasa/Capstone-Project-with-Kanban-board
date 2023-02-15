@@ -6,4 +6,4 @@ const fetchCharacter = async () => {
   return data;
 };
 
-export { fetchCharacter };
+export default fetchCharacter;
