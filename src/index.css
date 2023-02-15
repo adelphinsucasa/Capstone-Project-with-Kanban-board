@@ -141,19 +141,23 @@ main .card .cardButtons .btnReservation:active {
 
 .comment__section {
   width: 60%;
+  height: 2000px;
   margin-left: -100%;
-  height: auto;
   position: absolute;
   top: 0;
-  background-color: rgb(0, 0, 0);
-  padding: 40px;
+  background-color: #000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .comment__section-close {
+  align-self: flex-end;
   color: white;
   text-align: end;
   font-size: 40px;
+  margin-right: 20px;
 }
 
 .btnClose {
@@ -161,13 +165,16 @@ main .card .cardButtons .btnReservation:active {
 }
 
 .comment__section-detail {
+  width: 100%;
   padding: 20px;
   color: white;
 }
 
 .comment__section-input {
+  width: 70%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .add-comment {
@@ -188,12 +195,30 @@ main .card .cardButtons .btnReservation:active {
 }
 
 .btnSubmitt {
-  width: 60px;
-  margin-left: 40%;
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px gray;
+  font-size: 20px;
+  background-color: lightgray;
+
+}
+
+.btnSubmitt:hover {
+  background-color: gray;
+  box-shadow: 2px 2px 5px 2px rgb(45, 43, 41);
+}
+
+.btnSubmitt:active {
+  background-color: rgb(227, 189, 54);
+  box-shadow: 2px 2px 5px 2px rgb(241, 158, 35);
+  transform: translateY(3px);
 }
 
 .active {
-  display: block;
+
   visibility: visible;
   height: 100vh;
   animation: active ease 0.5s;
