@@ -138,13 +138,67 @@ main .card .cardButtons .btnReservation:active {
   transform: translateY(3px);
 }
 
+.comment__section {
+  display: none;
+  margin-top: -400px;
+  height: 100vh;
+}
+
+.comment__section-close {
+  color: white;
+  text-align: end;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.comment__section-detail {
+  color: white;
+}
+
+.comment__section-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-comment {
+  color: white;
+  margin-bottom: 20pt;
+}
+
+.comment__section-input .name {
+  margin-bottom: 20px;
+  width: 50%;
+  height: 30px;
+}
+
+.comment__section-input .comment {
+  margin-bottom: 20px;
+  width: 50%;
+  height: 100px;
+}
+
+.btnSubmitt {
+  width: 60px;
+  margin-left: 40%;
+}
+
+.active {
+  display: block;
+  height: 100vh;
+}
+
+.hide {
+  opacity: 0.1;
+}
+
 .footer {
-  bottom: 0;
+  bottom: 30px;
 }
 
 .textFooter {
   margin-left: 40px;
   color: white;
   font-size: 20px;
+  margin-top: 80px;
   margin-bottom: 10px;
 }
