@@ -1,5 +1,5 @@
 import { fetchCharacter, fetchCharacterbyId } from './apiManagement.js';
-import { setLike, getLike } from './involmentApi.js';
+import { setLike, getLike , addComment, getComments } from './involmentApi.js';
 
 const ul = document.querySelector('.cardContainer');
 const commentSection = document.querySelector('.comment__section');
@@ -112,6 +112,8 @@ const renderData = async (index) => {
                   <p>full name:${data.fullName}</p>
                   <p>title:${data.title}</p>
                 </div>
+                <div class="comment__retrieved">
+                </div>
                 <div class="comment__section-input">
                   <h2 class="add-comment">Add comment</h2>
                   <input type="text" class="name" placeholder="Your Name" />
@@ -126,6 +128,38 @@ const renderData = async (index) => {
                   main.classList.remove('hide');
                   header.classList.remove('hide');
                   footer.classList.remove('hide');
+                });  
+
+                
+                getComments(data.id)
+                .then((data) => {
+                  //const commentItems = document.querySelector('.commentItems');
+                  var divComment = document.querySelector('.comment__retrieved');
+                  divComment.innerHTML =  `<h2>Comments ( ${data.length} )</h2>`;
+                  divComment.innerHTML +=  `<ul class="ulComments">`
+                  data.forEach((record) => {
+                    divComment.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
+                    </li>`;
+                  });
+                  divComment.innerHTML +=  `</ul>`
+                  
+                  console.log(divComment.innerHTML);
+                });
+
+                //commentItems.innerHTML += ``
+
+                const btnSubmitt = document.querySelector('.btnSubmitt');
+
+                btnSubmitt.addEventListener('click', (e) => {
+                  const name = document.querySelector('.name');
+                  const comment = document.querySelector('.comment');
+
+                  const item = {
+                      "item_id": data.id,
+                      "username": name.value,
+                      "comment": comment.value
+                  }
+                  addComment(item);
                 });
               });
           });

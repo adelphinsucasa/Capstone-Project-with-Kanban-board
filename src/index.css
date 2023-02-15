@@ -170,11 +170,23 @@ main .card .cardButtons .btnReservation:active {
   color: white;
 }
 
+.comment__retrieved .commentItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  color: white;
+}
+
 .comment__section-input {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-top: 60px;
 }
 
 .add-comment {
