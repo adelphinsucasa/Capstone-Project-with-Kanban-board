@@ -1,5 +1,5 @@
 import { fetchCharacter, fetchCharacterbyId } from './apiManagement.js';
-import { setLike, getLike , addComment, getComments } from './involmentApi.js';
+import { setLike, getLike, addComment, getComments } from './involmentApi.js';
 
 const ul = document.querySelector('.cardContainer');
 const commentSection = document.querySelector('.comment__section');
@@ -113,6 +113,8 @@ const renderData = async (index) => {
                   <p>title:${data.title}</p>
                 </div>
                 <div class="comment__retrieved">
+                  <h2 class="totalComments"><h2>
+                  <ul class="ulComments"></ul>
                 </div>
                 <div class="comment__section-input">
                   <h2 class="add-comment">Add comment</h2>
@@ -128,37 +130,32 @@ const renderData = async (index) => {
                   main.classList.remove('hide');
                   header.classList.remove('hide');
                   footer.classList.remove('hide');
-                });  
-
-                
-                getComments(data.id)
-                .then((data) => {
-                  //const commentItems = document.querySelector('.commentItems');
-                  var divComment = document.querySelector('.comment__retrieved');
-                  divComment.innerHTML =  `<h2>Comments ( ${data.length} )</h2>`;
-                  divComment.innerHTML +=  `<ul class="ulComments">`
-                  data.forEach((record) => {
-                    divComment.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
-                    </li>`;
-                  });
-                  divComment.innerHTML +=  `</ul>`
-                  
-                  console.log(divComment.innerHTML);
                 });
 
-                //commentItems.innerHTML += ``
+                getComments(data.id)
+                  .then((comments) => {
+                    const totalComments = document.querySelector('.totalComments');
+                    const numComments = (comments.length === undefined) ? 0 : comments.length;
+                    totalComments.innerHTML = `Comments ( ${numComments} )`;
+
+                    const ulComments = document.querySelector('.ulComments');
+                    comments.forEach((record) => {
+                      ulComments.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
+                    </li>`;
+                    });
+                  });
 
                 const btnSubmitt = document.querySelector('.btnSubmitt');
 
-                btnSubmitt.addEventListener('click', (e) => {
+                btnSubmitt.addEventListener('click', () => {
                   const name = document.querySelector('.name');
                   const comment = document.querySelector('.comment');
 
                   const item = {
-                      "item_id": data.id,
-                      "username": name.value,
-                      "comment": comment.value
-                  }
+                    item_id: data.id,
+                    username: name.value,
+                    comment: comment.value,
+                  };
                   addComment(item);
                 });
               });

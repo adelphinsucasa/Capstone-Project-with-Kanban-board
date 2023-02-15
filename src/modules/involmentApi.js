@@ -28,13 +28,14 @@ const addComment = async (data = {}) => {
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',
     },
-  })
-  .then((response) => console.log(response));
+  });
 };
 
 const getComments = async (data = '') => {
-  const response = await fetch(urlComments + "?item_id=" + data);
+  const response = await fetch(`${urlComments}?item_id=${data}`);
   return response.json();
 };
 
-export { setLike, getLike , addComment, getComments};
+export {
+  setLike, getLike, addComment, getComments,
+};
