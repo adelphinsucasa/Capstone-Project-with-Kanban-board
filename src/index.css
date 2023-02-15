@@ -141,11 +141,11 @@ main .card .cardButtons .btnReservation:active {
 
 .comment__section {
   width: 60%;
-  height: 2000px;
+  height: 9000px;
   margin-left: -100%;
   position: absolute;
   top: 0;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -179,7 +179,8 @@ main .card .cardButtons .btnReservation:active {
 
 .add-comment {
   color: white;
-  margin-bottom: 20pt;
+  margin-top: -45px;
+  margin-left: 60%;
 }
 
 .comment__section-input .name {
@@ -203,7 +204,6 @@ main .card .cardButtons .btnReservation:active {
   box-shadow: 5px 5px 5px 5px gray;
   font-size: 20px;
   background-color: lightgray;
-
 }
 
 .btnSubmitt:hover {
@@ -218,7 +218,6 @@ main .card .cardButtons .btnReservation:active {
 }
 
 .active {
-
   visibility: visible;
   height: 100vh;
   animation: active ease 0.5s;
