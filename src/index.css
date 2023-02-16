@@ -145,19 +145,16 @@ main .card .cardButtons .btnReservation:active {
 
 .comment__section {
   width: 60%;
-<<<<<<< HEAD
   height: 100vh;
   margin-left: -100%;
   position: absolute;
   top: 0;
-  background-color: rgba(0,0,0, 0.6);
-=======
+  background-color: rgba(0, 0, 0, 0.6);
   height: 2000px;
   margin-left: -100%;
   position: absolute;
   top: 0;
   background-color: #000;
->>>>>>> parent of e38877b (fix submit button)
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -213,11 +210,8 @@ main .card .cardButtons .btnReservation:active {
 
 .add-comment {
   color: white;
-<<<<<<< HEAD
   margin-bottom: 10px;
-=======
   margin-bottom: 20pt;
->>>>>>> parent of e38877b (fix submit button)
 }
 
 .comment__section-input .name {
@@ -241,7 +235,6 @@ main .card .cardButtons .btnReservation:active {
   box-shadow: 5px 5px 5px 5px gray;
   font-size: 20px;
   background-color: lightgray;
-
 }
 
 .btnSubmitt:hover {
@@ -256,7 +249,6 @@ main .card .cardButtons .btnReservation:active {
 }
 
 .active {
-
   visibility: visible;
   height: 100vh;
   animation: active ease 0.5s;
@@ -401,12 +393,12 @@ main .card .cardButtons .btnReservation:active {
     font-size: 20px;
     margin-right: 10px;
   }
-  
+
   .comment__section-detail {
     width: 100%;
     padding: 10px;
   }
-  
+
   .comment__section-detail img {
     width: 80%;
   }
@@ -421,7 +413,7 @@ main .card .cardButtons .btnReservation:active {
     margin-left: 30px;
     align-items: flex-start;
   }
-  .comment__retrieved ul li { 
+  .comment__retrieved ul li {
     text-align: left;
     align-items: flex-start;
   }
@@ -429,30 +421,30 @@ main .card .cardButtons .btnReservation:active {
   .comment__retrieved h2 {
     font-size: 8px;
   }
-  
+
   .comment__retrieved ul {
     font-size: 8px;
   }
-  
+
   .comment__section-input {
     width: 90%;
     margin-bottom: 5px;
     margin-top: 10px;
   }
-  
+
   .add-comment {
     margin-bottom: 5px;
   }
-  
+
   .comment__section-input .name {
     margin-bottom: 10px;
     height: 20px;
   }
-  
+
   .comment__section-input .comment {
     margin-bottom: 10px;
   }
-  
+
   .btnSubmitt {
     width: 80px;
     height: 20px;
@@ -471,28 +463,28 @@ main .card .cardButtons .btnReservation:active {
     animation-fill-mode: forwards;
     margin-left: 5%;
   }
-  
+
   @keyframes active {
     0% {
       margin-left: -100%;
     }
-  
+
     100% {
       margin-left: 5%;
     }
   }
-  
+
   @keyframes disable {
     0% {
       margin-left: 5%;
     }
-  
+
     100% {
       margin-left: -100%;
     }
   }
 
-  footer .textFooter{
+  footer .textFooter {
     font-size: 10px;
   }
 }
