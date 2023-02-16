@@ -10,6 +10,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [Walkthrough Video](#walkthrough-video)
   - [🛠 Built With](#built-with)
   - [Tech Stack](#tech-stack)
   - [Key Features](#key-features)
@@ -27,7 +28,12 @@
 
 # 📖 Javascript Capstone Project <a name="about-project"></a>
 
-> Javascript Capstone Project is a website based on an external API. It uses [Game of Thrones API](https://thronesapi.com/) to get info about different characters, and [Involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) to to store likes and comments from users.
+> Javascript Capstone Project is a website based on an external API. It uses [Game of Thrones API](https://thronesapi.com/) to get info about different characters, and [Involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) to store likes and comments from users.
+
+
+
+## Walkthrough Video <a  name="walkthrough-video"></a>
+[Check the video](https://drive.google.com/file/d/1TlS4ekESD_AiP_8m-mPPFiYvU7aDRQRS/view?usp=share_link)
 
 ## 🛠 Built With <a name="built-with"></a>
 
