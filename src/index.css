@@ -145,11 +145,19 @@ main .card .cardButtons .btnReservation:active {
 
 .comment__section {
   width: 60%;
+<<<<<<< HEAD
   height: 100vh;
   margin-left: -100%;
   position: absolute;
   top: 0;
   background-color: rgba(0,0,0, 0.6);
+=======
+  height: 2000px;
+  margin-left: -100%;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+>>>>>>> parent of e38877b (fix submit button)
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -205,7 +213,11 @@ main .card .cardButtons .btnReservation:active {
 
 .add-comment {
   color: white;
+<<<<<<< HEAD
   margin-bottom: 10px;
+=======
+  margin-bottom: 20pt;
+>>>>>>> parent of e38877b (fix submit button)
 }
 
 .comment__section-input .name {
@@ -229,6 +241,7 @@ main .card .cardButtons .btnReservation:active {
   box-shadow: 5px 5px 5px 5px gray;
   font-size: 20px;
   background-color: lightgray;
+
 }
 
 .btnSubmitt:hover {
@@ -243,6 +256,7 @@ main .card .cardButtons .btnReservation:active {
 }
 
 .active {
+
   visibility: visible;
   height: 100vh;
   animation: active ease 0.5s;
