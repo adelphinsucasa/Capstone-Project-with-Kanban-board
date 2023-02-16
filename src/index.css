@@ -86,6 +86,10 @@ main .card .cardData img {
   height: auto;
 }
 
+.comment__retrieved h2 {
+  font-size: 14px;
+}
+
 main .card .cardData h2 {
   font-size: 20px;
 }
@@ -178,10 +182,6 @@ main .card .cardButtons .btnReservation:active {
 
 .comment__retrieved {
   color: white;
-}
-
-.comment__retrieved h2 {
-  font-size: 14px;
 }
 
 .comment__retrieved ul {
@@ -302,6 +302,10 @@ main .card .cardButtons .btnReservation:active {
     gap: 10px;
   }
 
+  .comment__section-detail img {
+    width: 80%;
+  }
+
   header .logo img {
     margin-left: 10px;
   }
@@ -348,6 +352,10 @@ main .card .cardButtons .btnReservation:active {
     margin: 5px;
   }
 
+  .comment__retrieved h2 {
+    font-size: 8px;
+  }
+
   main .card .cardData h2 {
     font-size: 10px;
   }
@@ -363,6 +371,10 @@ main .card .cardButtons .btnReservation:active {
 
   main .card .cardData .likes .imageLike {
     width: 14px;
+  }
+
+  .comment__section-detail p {
+    font-size: 12px;
   }
 
   main .card .cardData .likes p {
@@ -387,58 +399,44 @@ main .card .cardButtons .btnReservation:active {
     font-size: 20px;
     margin-right: 10px;
   }
-  
+
   .comment__section-detail {
     width: 100%;
     padding: 10px;
-  }
-  
-  .comment__section-detail img {
-    width: 80%;
-  }
-
-  .comment__section-detail p {
-    font-size: 12px;
   }
 
   .comment__retrieved ul {
     gap: 5px;
     width: 80%;
+    font-size: 8px;
     margin-left: 30px;
     align-items: flex-start;
   }
-  .comment__retrieved ul li { 
+
+  .comment__retrieved ul li {
     text-align: left;
     align-items: flex-start;
   }
 
-  .comment__retrieved h2 {
-    font-size: 8px;
-  }
-  
-  .comment__retrieved ul {
-    font-size: 8px;
-  }
-  
   .comment__section-input {
     width: 90%;
     margin-bottom: 5px;
     margin-top: 10px;
   }
-  
+
   .add-comment {
     margin-bottom: 5px;
   }
-  
+
   .comment__section-input .name {
     margin-bottom: 10px;
     height: 20px;
   }
-  
+
   .comment__section-input .comment {
     margin-bottom: 10px;
   }
-  
+
   .btnSubmitt {
     width: 80px;
     height: 20px;
@@ -457,28 +455,28 @@ main .card .cardButtons .btnReservation:active {
     animation-fill-mode: forwards;
     margin-left: 5%;
   }
-  
+
   @keyframes active {
     0% {
       margin-left: -100%;
     }
-  
+
     100% {
       margin-left: 5%;
     }
   }
-  
+
   @keyframes disable {
     0% {
       margin-left: 5%;
     }
-  
+
     100% {
       margin-left: -100%;
     }
   }
 
-  footer .textFooter{
+  footer .textFooter {
     font-size: 10px;
   }
 }

@@ -14,6 +14,14 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
+    "linebreak-style": "off",
+    "import/no-cycle": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "comma-dangle": "off",
+    "no-unused-vars": "off",
+    "no-descending-specificity": "off",
     "import/extensions": [
       1,
       {
