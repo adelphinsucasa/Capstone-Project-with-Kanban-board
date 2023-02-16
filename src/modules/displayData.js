@@ -172,7 +172,6 @@ const renderData = async (index) => {
                     comment.value = '';
                     updateComments(data.id);
                   });
-                
               });
             });
           });
@@ -185,7 +184,6 @@ const renderData = async (index) => {
   });
 };
 
-
 const updateComments = (value) => {
   getComments(value).then((comments) => {
     const ulComments = document.querySelector('.ulComments');
@@ -195,9 +193,8 @@ const updateComments = (value) => {
         </li>`;
     });
     const totalComments = document.querySelector('.totalComments');
-    totalComments.innerHTML=`Comments ( ${countComments()} )`;
+    totalComments.innerHTML = `Comments ( ${countComments()} )`;
   });
-  
 };
 
 export default renderData;
