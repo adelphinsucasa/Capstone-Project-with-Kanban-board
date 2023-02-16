@@ -52,17 +52,17 @@
 
 #### Key Features <a name="key-features"></a>
  <ul>
-  <li>- **HTML Interface with CSS (Desktop / mobile)**</li>
-  <li>- **JavaScript**</li>
-  <li>- **Webpack**</li>
-  <li>- **ES6**</li>
-  <li>- **Callbacks and Promises**</li>
-  <li>- **AAA pattern for unit tests**</li>
-  <li>- **Follow Gitflow**</li>
-  <li>- **Solve simple git conflicts**</li>
-  <li>- **Send and receive data from an API, using API documentation**</li>
-  <li>- **JavaScript code asynchronous**</li>
-  <li>- **Kanban board**</li>
+  <li>HTML Interface with CSS (Desktop / mobile)</li>
+  <li>JavaScript</li>
+  <li>Webpack</li>
+  <li>ES6</li>
+  <li>Callbacks and Promises</li>
+  <li>AAA pattern for unit tests</li>
+  <li>Follow Gitflow</li>
+  <li>Solve simple git conflicts</li>
+  <li>Send and receive data from an API, using API documentation</li>
+  <li>JavaScript code asynchronous</li>
+  <li>Kanban board</li>
  </ul>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,6 +117,17 @@ Addis Ababa 💓
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+<ul>
+  <li>Live Demo</li>
+  <li>Walkthrough Video</li>
+</ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
