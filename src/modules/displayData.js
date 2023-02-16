@@ -1,5 +1,8 @@
 import { fetchCharacter, fetchCharacterbyId } from './apiManagement.js';
-import { setLike, getLike, addComment, getComments } from './involmentApi.js';
+import countComments from './comments.js';
+import {
+  setLike, getLike, addComment, getComments,
+} from './involmentApi.js';
 
 const ul = document.querySelector('.cardContainer');
 const commentSection = document.querySelector('.comment__section');
@@ -43,8 +46,15 @@ const renderData = async (index) => {
     default:
       break;
   }
-  elementWithBox.style.border = '2px Solid orange';
-  elementWithBox.style.padding = '10px';
+  
+  if (window.matchMedia("(max-width: 767px)")){
+    elementWithBox.style.border = '1px Solid orange';  
+    elementWithBox.style.padding = '2px';
+  } else {
+    elementWithBox.style.border = '2px Solid orange';
+    elementWithBox.style.padding = '10px';
+  }
+    
 
   getLike().then((likes) => {
     let i = 1;
@@ -132,21 +142,9 @@ const renderData = async (index) => {
                   footer.classList.remove('hide');
                 });
 
-                getComments(data.id)
-                  .then((comments) => {
-                    const totalComments = document.querySelector('.totalComments');
-                    const numComments = (comments.length === undefined) ? 0 : comments.length;
-                    totalComments.innerHTML = `Comments ( ${numComments} )`;
-
-                    const ulComments = document.querySelector('.ulComments');
-                    comments.forEach((record) => {
-                      ulComments.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
-                    </li>`;
-                    });
-                  });
+                updateComments(data.id);
 
                 const btnSubmitt = document.querySelector('.btnSubmitt');
-
                 btnSubmitt.addEventListener('click', () => {
                   const name = document.querySelector('.name');
                   const comment = document.querySelector('.comment');
@@ -157,6 +155,9 @@ const renderData = async (index) => {
                     comment: comment.value,
                   };
                   addComment(item);
+                  name.value = "";
+                  comment.value = "";
+                  setTimeout(updateComments(data.id),2000);
                 });
               });
           });
@@ -167,6 +168,23 @@ const renderData = async (index) => {
       i += 1;
     });
   });
+};
+
+const updateComments = (value) => {
+  getComments(value)
+      .then((comments) => {
+        //const totalComments = document.querySelector('.totalComments');
+        //const numComments = (comments.length === undefined) ? 0 : comments.length;
+        //totalComments.innerHTML = `Comments ( ${numComments} )`;
+
+        const ulComments = document.querySelector('.ulComments');
+        ulComments.innerHTML = '';
+        comments.forEach((record) => {
+          ulComments.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
+        </li>`; 
+        });
+        totalComments.innerHTML = `Comments ( ${countComments} )`;
+      });
 };
 
 export default renderData;

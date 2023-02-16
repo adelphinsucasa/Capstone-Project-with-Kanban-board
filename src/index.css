@@ -7,12 +7,16 @@
 
 body {
   background-color: black;
+  margin-bottom: 60px;
 }
 
 header {
   display: flex;
-  margin: 20px;
+  margin: 0;
+  padding-top: 5px;
   align-items: center;
+  width: 100%;
+  background-color: rgb(31, 30, 30, 0.8);
 }
 
 header .logo img {
@@ -141,15 +145,17 @@ main .card .cardButtons .btnReservation:active {
 
 .comment__section {
   width: 60%;
-  height: 9000px;
+  height: 100vh;
   margin-left: -100%;
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0,0,0, 0.6);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
+  border: 8px solid white;
 }
 
 .comment__section-close {
@@ -194,13 +200,12 @@ main .card .cardButtons .btnReservation:active {
   align-items: center;
   align-content: center;
   margin-bottom: 10px;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .add-comment {
   color: white;
-  margin-top: -45px;
-  margin-left: 60%;
+  margin-bottom: 10px;
 }
 
 .comment__section-input .name {
@@ -253,6 +258,7 @@ main .card .cardButtons .btnReservation:active {
 
 .hide {
   opacity: 0.1;
+  overflow: hidden;
 }
 
 @keyframes active {
@@ -276,13 +282,203 @@ main .card .cardButtons .btnReservation:active {
 }
 
 .footer {
-  bottom: 30px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: rgb(31, 30, 30);
 }
 
 .textFooter {
-  margin-left: 40px;
-  color: white;
-  font-size: 20px;
-  margin-top: 80px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    gap: 10px;
+  }
+
+  header .logo img {
+    margin-left: 10px;
+  }
+
+  header nav {
+    width: 100%;
+    margin-left: 0;
+    gap: 8px;
+    margin-right: 2px;
+  }
+
+  header nav li a {
+    list-style: none;
+    font-size: 10px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .card {
+    height: auto;
+  }
+
+  main .cardContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .cardContainer li {
+    width: 70%;
+    align-items: center;
+  }
+
+  main .card .imageCard img {
+    width: 180px;
+    height: 150px;
+  }
+
+  main .card .cardData {
+    margin: 5px;
+  }
+
+  main .card .cardData h2 {
+    font-size: 10px;
+  }
+
+  main .card .cardData h3 {
+    font-size: 8px;
+  }
+
+  main .card .cardData .likes {
+    display: flex;
+    align-items: center;
+  }
+
+  main .card .cardData .likes .imageLike {
+    width: 14px;
+  }
+
+  main .card .cardData .likes p {
+    font-size: 8px;
+  }
+
+  main .card .cardButtons {
+    gap: 5px;
+  }
+
+  main .card .cardButtons .btnComment,
+  main .card .cardButtons .btnReservation {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+
+  .comment__section {
+    width: 90%;
+  }
+
+  .comment__section-close {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .comment__section-detail {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .comment__section-detail img {
+    width: 80%;
+  }
+
+  .comment__section-detail p {
+    font-size: 12px;
+  }
+
+  .comment__retrieved ul {
+    gap: 5px;
+    width: 80%;
+    margin-left: 30px;
+    align-items: flex-start;
+  }
+  .comment__retrieved ul li { 
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .comment__retrieved h2 {
+    font-size: 8px;
+  }
+  
+  .comment__retrieved ul {
+    font-size: 8px;
+  }
+  
+  .comment__section-input {
+    width: 90%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  .add-comment {
+    margin-bottom: 5px;
+  }
+  
+  .comment__section-input .name {
+    margin-bottom: 10px;
+    height: 20px;
+  }
+  
+  .comment__section-input .comment {
+    margin-bottom: 10px;
+  }
+  
+  .btnSubmitt {
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    box-shadow: 2px 2px 2px 2px gray;
+    font-size: 10px;
+  }
+
+  .btnSubmitt:active {
+    transform: translateY(2px);
+  }
+
+  .active {
+    animation-fill-mode: forwards;
+    margin-left: 5%;
+  }
+  
+  @keyframes active {
+    0% {
+      margin-left: -100%;
+    }
+  
+    100% {
+      margin-left: 5%;
+    }
+  }
+  
+  @keyframes disable {
+    0% {
+      margin-left: 5%;
+    }
+  
+    100% {
+      margin-left: -100%;
+    }
+  }
+
+  footer .textFooter{
+    font-size: 10px;
+  }
 }
