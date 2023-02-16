@@ -150,10 +150,6 @@ main .card .cardButtons .btnReservation:active {
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 2000px;
-  margin-left: -100%;
-  position: absolute;
-  top: 0;
   background-color: #000;
   text-align: center;
   display: flex;
@@ -410,19 +406,17 @@ main .card .cardButtons .btnReservation:active {
   .comment__retrieved ul {
     gap: 5px;
     width: 80%;
+    font-size: 8px;
     margin-left: 30px;
     align-items: flex-start;
   }
+
   .comment__retrieved ul li {
     text-align: left;
     align-items: flex-start;
   }
 
   .comment__retrieved h2 {
-    font-size: 8px;
-  }
-
-  .comment__retrieved ul {
     font-size: 8px;
   }
 

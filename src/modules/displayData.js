@@ -180,7 +180,7 @@ const updateComments = (value) => {
       ulComments.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
         </li>`;
     });
-    totalComments.innerHTML = `Comments ( ${countComments} )`;
+    // totalComments.innerHTML = `Comments ( ${countComments} )`;
   });
 };
 
