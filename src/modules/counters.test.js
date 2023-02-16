@@ -49,10 +49,10 @@ describe('Testing Counter Comments function "countComments"', () => {
   });
 });
 
-/*
+
 describe('Testing Counter Characters function "countCharacter"', () => {
   test('1.- displays how many characters exist', async () => {
     await expect(countCharacter()).resolves.toBe(53);
   });
 });
-*/
+

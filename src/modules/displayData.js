@@ -166,10 +166,12 @@ const renderData = async (index) => {
                   username: name.value,
                   comment: comment.value,
                 };
-                addComment(item);
-                name.value = '';
-                comment.value = '';
-                setTimeout(updateComments(data.id), 2000);
+                addComment(item)
+                  .then((res) => {
+                    name.value = '';
+                    comment.value = '';
+                    updateComments(data.id);
+                  });
               });
             });
           });
@@ -191,7 +193,10 @@ const updateComments = (value) => {
       ulComments.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
         </li>`;
     });
+    const totalComments = document.querySelector('.totalComments');
+    totalComments.innerHTML=`Comments ( ${countComments()} )`;
   });
+  
 };
 
 export default renderData;
