@@ -11,7 +11,7 @@ window.onload = () => {
   countCharacter();
 };
 home.addEventListener('click', () => {
-  renderData(1);
+  renderData(0);
   countCharacter();
 });
 

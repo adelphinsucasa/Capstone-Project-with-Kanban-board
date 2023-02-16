@@ -1,6 +1,7 @@
 import { fetchCharacter, fetchCharacterbyId } from './apiManagement.js';
 import countComments from './comments.js';
 import { setLike, getLike, addComment, getComments } from './involmentApi.js';
+import countCharacter from './characterCounter.js';
 
 const ul = document.querySelector('.cardContainer');
 const commentSection = document.querySelector('.comment__section');
@@ -9,8 +10,17 @@ const header = document.querySelector('header');
 const footer = document.querySelector('footer');
 
 const renderData = async (index) => {
-  const cardIni = (index - 1) * 13 + 1;
-  const cardEnd = cardIni + 12;
+  let cardIni = 0;
+  let cardEnd = 0;
+
+  if (index === 0) {
+    cardIni = 1;
+    cardEnd = await countCharacter();
+  } else {
+    cardIni = (index - 1) * 13 + 1;
+    cardEnd = cardIni + 12;
+  }
+
   const characteres = await fetchCharacter();
   const westeros = document.querySelector('#westeros');
   const home = document.querySelector('#homepage');
@@ -27,6 +37,10 @@ const renderData = async (index) => {
   ulthos.style.border = 0;
 
   switch (index) {
+    case 0:
+      elementWithBox = document.querySelector('#homepage');
+      break;
+
     case 1:
       elementWithBox = document.querySelector('#westeros');
       break;
@@ -168,20 +182,16 @@ const renderData = async (index) => {
   });
 };
 
+/*
 const updateComments = (value) => {
   getComments(value).then((comments) => {
-    // const totalComments = document.querySelector('.totalComments');
-    // const numComments = (comments.length === undefined) ? 0 : comments.length;
-    // totalComments.innerHTML = `Comments ( ${numComments} )`;
-
     const ulComments = document.querySelector('.ulComments');
     ulComments.innerHTML = '';
     comments.forEach((record) => {
       ulComments.innerHTML += `<li class="liComment">${record.creation_date} ${record.username}: ${record.comment}
         </li>`;
     });
-    // totalComments.innerHTML = `Comments ( ${countComments} )`;
   });
 };
-
+*/
 export default renderData;
