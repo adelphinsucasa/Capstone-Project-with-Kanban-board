@@ -1,7 +1,7 @@
 # Javascript Capstone Project with Kanban Board
 
 <div align="center">
-  <img  src="./assets/images/CapstoneLogo.png" alt="logo" width="140"  height="auto" />
+  <img  src="./src/assets/images/CapstoneLogo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Javascript Capstone Project</b></h3>
