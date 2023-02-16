@@ -10,10 +10,10 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-    - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [🧑🏻‍💻 Live Demo](#live-demo)    
+  - [🛠 Built With](#built-with)
+  - [Tech Stack](#tech-stack)
+  - [Key Features](#key-features)
+- [🧑🏻‍💻 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Clone](#prerequisites)
@@ -30,12 +30,13 @@
 > Javascript Capstone Project is a website based on an external API. It uses [Game of Thrones API](https://thronesapi.com/) to get info about different characters, and [Involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) to to store likes and comments from users.
 
 ## 🛠 Built With <a name="built-with"></a>
- - Visual Studio Code
- - HTML
- - CSS
- - Javascript
- - Github
- - Kanban Board
+
+- Visual Studio Code
+- HTML
+- CSS
+- Javascript
+- Github
+- Kanban Board
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -51,6 +52,7 @@
 <!-- Features -->
 
 #### Key Features <a name="key-features"></a>
+
  <ul>
   <li>HTML Interface with CSS (Desktop / mobile)</li>
   <li>JavaScript</li>
@@ -111,10 +113,9 @@ Venezuela 💓
 : Haftamu Desta
 Addis Ababa 💓
 
-- GitHub: [@githubhandle](https://github.com/haftamudesta)
-- Twitter: [@twitterhandle](https://twitter.com/destahftamu)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/haftamu-desta-795791a1/)
-
+- GitHub: [@haftamu](https://github.com/haftamudesta)
+- Twitter: [@DestaHaftamu](https://twitter.com/DestaHftamu?t=NQ4ovkdWbsfsjh62NFEXFg&s=09)
+- LinkedIn: [Haftamu Desta](https://www.linkedin.com/in/haftamu-desta-795791a1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,8 +127,6 @@ Addis Ababa 💓
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
