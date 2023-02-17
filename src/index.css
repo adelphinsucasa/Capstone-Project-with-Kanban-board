@@ -151,8 +151,8 @@ main .card .cardButtons .btnReservation:active {
   width: 60%;
   height: 100vh;
   margin-left: -100%;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 10vh;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   display: flex;
