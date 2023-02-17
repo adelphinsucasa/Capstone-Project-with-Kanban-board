@@ -166,11 +166,12 @@ const renderData = async (index) => {
                   username: name.value,
                   comment: comment.value,
                 };
-                addComment(item).then((res) => {
-                  name.value = '';
-                  comment.value = '';
-                  updateComments(data.id);
-                });
+                addComment(item)
+                  .then((res) => {
+                    name.value = '';
+                    comment.value = '';
+                    updateComments(data.id);
+                  });
               });
             });
           });
