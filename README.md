@@ -128,8 +128,7 @@ Addis Ababa 💓
 ## 🔭 Future Features <a name="future-features"></a>
 
 <ul>
-  <li>Live Demo</li>
-  <li>Walkthrough Video</li>
+  <li>Use Reservations</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
