@@ -167,7 +167,7 @@ const renderData = async (index) => {
                   comment: comment.value,
                 };
                 addComment(item)
-                  .then((data) => {
+                  .then((res) => {
                     name.value = '';
                     comment.value = '';
                     updateComments(data.id);
