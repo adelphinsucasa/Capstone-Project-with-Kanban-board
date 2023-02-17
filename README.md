@@ -76,7 +76,7 @@
 
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
-<a href="#">Comming soon</a>
+[Visit The Live Demo](https://adelphinsucasa.github.io/Capstone-Project-with-Kanban-board/dist/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -128,8 +128,7 @@ Addis Ababa 💓
 ## 🔭 Future Features <a name="future-features"></a>
 
 <ul>
-  <li>Live Demo</li>
-  <li>Walkthrough Video</li>
+  <li>Add Reservations</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
