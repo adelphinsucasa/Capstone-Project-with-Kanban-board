@@ -21,7 +21,6 @@
     "operator-linebreak": "off",
     "comma-dangle": "off",
     "no-unused-vars": "off",
-    " import/no-unresolved": "off",
     "no-descending-specificity": "off",
     "import/extensions": [
       1,
