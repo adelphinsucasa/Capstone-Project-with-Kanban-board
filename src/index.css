@@ -152,7 +152,7 @@ main .card .cardButtons .btnReservation:active {
   height: 100vh;
   margin-left: -100%;
   position: fixed;
-  top: 10vh;
+  top: 0vh;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   display: flex;
@@ -199,7 +199,7 @@ main .card .cardButtons .btnReservation:active {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   margin-top: 20px;
 }
 
