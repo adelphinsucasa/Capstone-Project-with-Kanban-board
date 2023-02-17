@@ -1,7 +1,7 @@
 import './index.css';
-import './assets/images/logo3.png'
-import './assets/images/icons-sparkling-heart-48.png'
-import './assets/images/icons-white-heart-48.png'
+import './assets/images/logo3.png';
+import './assets/images/icons-sparkling-heart-48.png';
+import './assets/images/icons-white-heart-48.png';
 import renderData from './modules/displayData.js';
 import countCharacter from './modules/characterCounter.js';
 
