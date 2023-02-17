@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import countComments from './comments.js';
-import countCharacter from './characterCounter.js';
+// import countCharacter from './characterCounter.js';
 import CharaterTest from './mock/characterCounter.js';
 
 describe('Testing Counter Comments function "countComments"', () => {
