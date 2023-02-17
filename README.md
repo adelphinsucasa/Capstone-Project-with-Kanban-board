@@ -18,6 +18,10 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Clone](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -94,10 +98,38 @@ Clone this repository to your desired folder:
   git clone https://github.com/adelphinsucasa/Capstone-Project-with-Kanban-board.git
 ```
 
-<ul>
-    <li>npm init -y</li>
-    <li>npm install</li>
-</ul>
+### Install
+
+Install this project with:
+
+```sh
+  npm init -y
+  npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm test
+```
+
+### Deployment
+
+You can deploy this project using:
+
+```sh
+  npm run build
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +160,7 @@ Addis Ababa 💓
 ## 🔭 Future Features <a name="future-features"></a>
 
 <ul>
-  <li>Add Reservations</li>
+  <li>Add Reservations Popup</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -136,6 +168,7 @@ Addis Ababa 💓
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
