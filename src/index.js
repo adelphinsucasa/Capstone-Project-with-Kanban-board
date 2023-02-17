@@ -34,5 +34,5 @@ sothoryos.addEventListener('click', () => {
 ulthos.addEventListener('click', () => {
   renderData(4);
 });
-// westeros.click();
+
 countCharacter();
