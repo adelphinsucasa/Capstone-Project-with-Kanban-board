@@ -45,3 +45,11 @@ describe('Testing Counter Comments function "countComments"', () => {
     expect(numComments).toBe(6);
   });
 });
+test('testing number of characters', () => {
+  const counterTest = new CharaterTest();
+  const counterTest1 = new CharaterTest();
+  counterTest.countItems(40);
+  counterTest1.countItems(34);
+  expect(counterTest.totalCharacter).toBe(40);
+  expect(counterTest1.totalCharacter).toBe(34);
+});
